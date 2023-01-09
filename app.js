@@ -51,14 +51,16 @@ function selecSobremesa(sobremesa) {
     sobremesa.classList.toggle("sobremesaSelecionada");
 
     if (contador === 3) {
-
+        document.querySelector("button").disabled = false;
+        document.querySelector(".h11").classList.add("finalizado");
+        document.querySelector(".h11").innerHTML = "Fechar pedido";
     }
     comida3 = sobremesa;
 };
 
 function zap() {
 
-    let str = "https://wa.me/553135061160?text=";
+    let str = "https://wa.me/5531991099991?text=";
 
     let text1 = comida1.querySelector("h2").textContent;
     text1 = text1.slice(25, text1.length - 21);
