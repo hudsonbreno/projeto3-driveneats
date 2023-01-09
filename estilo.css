@@ -112,4 +112,31 @@ footer{
 }
 
 footer div p{
-    font-size: ;}
+    font-size: 20px;
+    font-weight: 400;
+    }
+
+
+.none {
+    display: none;
+}
+
+.pratoSelecionado {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.sobremesaSelecionada {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.bebidaSelecionada {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+footer a button:enabled {
+    background-color: #32B72F;
+}
+
+.finalizado {
+    font-weight: 700;
+}
