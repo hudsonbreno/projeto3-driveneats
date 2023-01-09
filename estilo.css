@@ -1,8 +1,13 @@
 body{
-    background-color: #E5E5E5;;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     background-color:#CF2B2B;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    
 }
 
 .titulo{
@@ -13,5 +18,4 @@ header{
 
 .subtitulo{
     color: white;
-    
 }
