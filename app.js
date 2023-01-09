@@ -63,25 +63,22 @@ function zap() {
     let str = "https://wa.me/5531991099991?text=";
 
     let text1 = comida1.querySelector("h2").textContent;
-    text1 = text1.slice(25, text1.length - 21);
 
     let text2 = comida2.querySelector("h2").textContent;
-    text2 = text2.slice(25, text2.length - 21);
 
     let text3 = comida3.querySelector("h2").textContent;
-    text3 = text3.slice(25, text3.length - 21);
 
-    let num1 = comida1.querySelector("p").textContent;
+    let num1 = comida1.querySelector("h3").textContent;
     num1 = num1.replace(",", ".");
-    num1 = parseFloat(num1.slice(28, num1.length));
+    num1 = parseFloat(num1.slice(2, num1.length));
 
-    let num2 = comida2.querySelector("p").textContent;
+    let num2 = comida2.querySelector("h3").textContent;
     num2 = num2.replace(",", ".");
-    num2 = parseFloat(num2.slice(28, num2.length));
+    num2 = parseFloat(num2.slice(2, num2.length));
 
-    let num3 = comida3.querySelector("p").textContent;
+    let num3 = comida3.querySelector("h3").textContent;
     num3 = num3.replace(",", ".");
-    num3 = parseFloat(num3.slice(28, num3.length));
+    num3 = parseFloat(num3.slice(2, num3.length));
 
     str +=
         `Olá gostaria de fazer o pedido:\n- Prato: ${text1}\n- Bebida: ${text2}\n- Sobremesa: ${text3}\nTotal: R$ ${(num1 + num2 + num3).toFixed(2)}`;
